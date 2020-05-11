@@ -14,4 +14,4 @@ npm-debug.log
 yarn-error.log
 
 # IDE files
-./idea/*
+.idea/*
