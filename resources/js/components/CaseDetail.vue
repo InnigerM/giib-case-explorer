@@ -3,7 +3,7 @@
         <h1 class="page-title" v-text="post.title"></h1>
         <div>
             <div class="mb-8">
-                <div class="case-image" v-bind:style="{ backgroundImage: 'url(' + post.image_link + ')' }"></div>
+                <div class="case-image shadow-2xl mb-8" v-bind:style="{ backgroundImage: 'url(' + post.image_link + ')' }"></div>
                 <p v-text="post.content" class="mb-6"></p>
             </div>
         </div>

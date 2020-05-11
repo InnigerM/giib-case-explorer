@@ -10,9 +10,14 @@
     @apply w-1/4 m-4 shadow border-2 rounded-lg mb-4;
 }
 
-.case-image {
+.card-image {
     @apply w-full bg-cover rounded-t-lg;
     height: 150px;
+}
+
+.case-image {
+    @apply w-full bg-cover shadow rounded-lg;
+    height: 40em;
 }
 
 @tailwind utilities;
