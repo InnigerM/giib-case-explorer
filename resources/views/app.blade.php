@@ -36,7 +36,11 @@
                     </h5>
                     <ul>
                         <li class="text-sm pb-4">
-                            <router-link class="text-black" to="/cases">View Cases</router-link>
+                            <router-link class="text-black" to="/cases" exact>View Cases</router-link>
+                        </li>
+
+                        <li class="text-sm pb-4">
+                            <router-link class="text-black" to="/cases/create" exact>Create new Case</router-link>
                         </li>
                     </ul>
                 </section>

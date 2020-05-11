@@ -2,6 +2,7 @@ import NotFound from "./components/NotFound";
 import Explore from "./components/Explore";
 import Cases from "./components/Cases";
 import CaseDetail from "./components/CaseDetail";
+import CaseCreate from "./components/CaseCreate";
 
 
 export default {
@@ -21,6 +22,11 @@ export default {
         {
             path: '/cases',
             component: Cases
+        },
+
+        {
+            path: '/cases/create',
+            component: CaseCreate
         },
 
         {

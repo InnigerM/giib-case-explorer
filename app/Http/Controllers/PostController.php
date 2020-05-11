@@ -22,4 +22,18 @@ class PostController extends Controller
 
         return Response::json($post);
     }
+
+    public function store(){
+        $post = new Post();
+        $post->title = request('title');
+        $post->content = request('content');
+        $post->image_link = request('image_link');
+        $post->save();
+
+        return redirect('/cases');
+    }
+
+    public function update() {
+
+    }
 }

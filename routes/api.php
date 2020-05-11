@@ -14,5 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::post('posts', 'PostController@store');
+Route::patch('posts/{id}', 'PostController@update');
 Route::get('posts', 'PostController@index');
 Route::get('posts/{id}', 'PostController@show');
