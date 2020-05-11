@@ -21,11 +21,19 @@
 }
 
 .btn {
-    @apply text-white rounded-full font-medium text-sm p-2 px-12 shadow-btn;
+    @apply text-white rounded-full font-medium text-sm p-2 px-12;
 }
 
 .btn-primary {
-    @apply bg-green-900;
+    @apply bg-green-900 shadow-btn-primary;
+}
+
+.btn-primary:disabled {
+    @apply bg-green-200 text-gray-400 shadow-none;
+}
+
+.btn-tertiary {
+    @apply bg-gray-100 text-gray-900 shadow-btn;
 }
 
 @tailwind utilities;

@@ -19,7 +19,7 @@ module.exports = {
             white: '#fff',
 
             gray: {
-                100: '#f7fafc',
+                100: '#fafafa',
                 200: '#edf2f7',
                 300: '#D5D9DE',
                 400: '#B0B7C1',
@@ -129,7 +129,8 @@ module.exports = {
             lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
             xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
             '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
-            'btn': '5px 5px 6px 0px rgba(48, 69, 100, 0.4), 5px 5px 6px 0px rgba(48, 69, 100, 0.4)',
+            'btn-primary': '5px 5px 6px 0px rgba(48, 69, 100, 0.4), 5px 5px 6px 0px rgba(48, 69, 100, 0.4)',
+            'btn': '5px 5px 6px 0px rgba(225, 225, 225, 1.0), 5px 5px 6px 0px rgba(225, 225, 225, 1.0)',
             inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
             outline: '0 0 0 3px rgba(66, 153, 225, 0.5)',
             none: 'none',
