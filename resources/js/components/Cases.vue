@@ -2,10 +2,11 @@
     <div>
         <h1 class="page-title">View all Cases here</h1>
         <div class="primary flex flex-wrap">
-            <div class="case-item" v-for="post in posts">
+            <div class="case-item flex-none" v-for="post in posts">
                 <div class="card-image" v-bind:style="{ backgroundImage: 'url(' + post.image_link + ')' }"></div>
                 <h5 v-text="post.title" class="mb-4 text-2xl"></h5>
-                <button class="btn btn-primary" @click="showPost(post.id)">See more</button>
+                <span class="btn btn-tertiary-blue m-12" v-text="post.tag"></span>
+                <button class="btn btn-primary mt-8" @click="showPost(post.id)">See more</button>
             </div>
         </div>
     </div>
@@ -20,7 +21,8 @@
                 post: {
                     title: '',
                     content: '',
-                    image_link: ''
+                    image_link: '',
+                    tag: ''
                 },
                 posts: []
             }

@@ -32,8 +32,12 @@
     @apply bg-green-200 text-gray-400 shadow-none;
 }
 
-.btn-tertiary {
+.btn-tertiary-white {
     @apply bg-gray-100 text-gray-900 shadow-btn;
+}
+
+.btn-tertiary-blue {
+    @apply bg-darkblue text-gray-100 shadow-btn-tertiary p-2 mb-4;
 }
 
 @tailwind utilities;

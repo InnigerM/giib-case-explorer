@@ -22,10 +22,16 @@
                         <input class="w-full border-gray-500 border-2  p-1 mb-5" placeholder="Paste an image link here"
                                v-model="post.image_link">
                     </label>
+
+                    <label class="w-full">
+                        Tag:
+                        <input class="w-full border-gray-500 border-2  p-1 mb-5" placeholder="Paste an image link here"
+                               v-model="post.tag">
+                    </label>
                 </form>
 
                 <button :disabled="!isValid" class="btn btn-primary m-2" @click="createPost()">Submit</button>
-                <button class="btn btn-tertiary m-2" @click="viewCases()">Cancel</button>
+                <button class="btn btn-tertiary-white m-2" @click="viewCases()">Cancel</button>
             </div>
         </div>
     </div>
@@ -40,7 +46,8 @@
                 post: {
                     title: '',
                     content: '',
-                    image_link: ''
+                    image_link: '',
+                    tag: ''
                 }
             }
         },
@@ -50,7 +57,8 @@
                 axios.post('http://giibTest.test/api/posts', {
                     title: this.post.title,
                     content: this.post.content,
-                    image_link: this.post.image_link
+                    image_link: this.post.image_link,
+                    tag: this.post.tag
                 })
                     .then(response => {
                         console.log(response);

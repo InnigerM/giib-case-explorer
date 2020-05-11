@@ -8,32 +8,43 @@ use Illuminate\Support\Facades\Response;
 
 class PostController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $posts = Post::all();
         return Response::json($posts);
     }
 
-    public function show($id) {
+    public function show($id)
+    {
         $post = Post::where('id', $id)->first();
 
-        if(!$post) {
+        if (!$post) {
             abort(404);
         }
 
         return Response::json($post);
     }
 
-    public function store(){
+    public function filter($tag)
+    {
+        $posts = Post::where('tag', $tag)->get();
+        return Response::json($posts);
+    }
+
+    public function store()
+    {
         $post = new Post();
         $post->title = request('title');
         $post->content = request('content');
         $post->image_link = request('image_link');
+        $post->tag = request('tag');
         $post->save();
 
         return redirect('/cases');
     }
 
-    public function update() {
+    public function update()
+    {
 
     }
 }
