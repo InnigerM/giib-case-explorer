@@ -7,7 +7,7 @@
 }
 
 .case-item {
-    @apply w-1/4 m-4 shadow border-2 rounded-lg mb-4;
+    @apply w-1/4 m-4 shadow border-2 rounded-lg mb-4 text-center pb-5;
 }
 
 .card-image {
@@ -18,6 +18,14 @@
 .case-image {
     @apply w-full bg-cover shadow rounded-lg;
     height: 40em;
+}
+
+.btn {
+    @apply text-white rounded-full font-medium text-sm p-2 px-12 shadow-btn;
+}
+
+.btn-primary {
+    @apply bg-green-900;
 }
 
 @tailwind utilities;
