@@ -3,15 +3,19 @@
         <h1 class="page-title">Explore Cases</h1>
         <div class="flex flex-wrap mb-8">
             <div v-for="tag in this.tags">
-            <span class="btn btn-tertiary-blue m-4 w-1/12" v-text="tag" @click="filter(tag)"></span>
+                <span class="btn btn-tertiary-blue m-4 w-1/12" v-text="tag" @click="filter(tag)"></span>
             </div>
         </div>
-        <div class="primary flex flex-wrap">
-            <div class="case-item flex-none" v-for="post in posts">
-                <div class="card-image" v-bind:style="{ backgroundImage: 'url(' + post.image_link + ')' }"></div>
-                <h5 v-text="post.title" class="mb-4 text-2xl"></h5>
-                <span class="btn btn-tertiary-blue m-12" v-text="post.tag"></span>
-                <button class="btn btn-primary mt-8" @click="showPost(post.id)">See more</button>
+        <div class="bg-local bg-cover bg-center pt-4 pb-24"
+             :style="{ backgroundImage: 'url(' + require('../../images/House_Detailed_Day'+'.png') + ')' }">
+            <div class="primary flex flex-wrap justify-center pb-64 pt-48 p-32 m-16 bg-no-repeat bg-center bg-contain"
+                 :style="{ backgroundImage: 'url(' + require('../../images/House'+'.png') + ')' }">
+                <div class="case-window"
+                     v-for="post in posts"
+                     :style="{ backgroundImage: 'url(' + require('../../images/Window'+'.png') + ')' }"
+                     @click="showPost(post.id)">
+                    <span v-text="post.title" class="text-2xl ml-auto mr-auto mb-auto mt-auto"></span>
+                </div>
             </div>
         </div>
     </div>
@@ -54,7 +58,7 @@
         },
 
         created() {
-            axios.get('http://giibTest.test/api/posts')
+            axios.get('http://giibTest.test/api/posts/favorite')
                 .then(response => {
                     let {data} = response;
                     this.posts = data;

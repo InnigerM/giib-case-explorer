@@ -14,6 +14,11 @@ class PostController extends Controller
         return Response::json($posts);
     }
 
+    public function favorite(){
+        $posts = Post::all()->skip(0)->take(6);
+        return Response::json($posts);
+    }
+
     public function show($id)
     {
         $post = Post::where('id', $id)->first();

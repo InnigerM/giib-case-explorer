@@ -62,6 +62,7 @@ module.exports = {
             darkblue: '#0C2549',
             violet: '#7B7ED9',
             purple: '#8458CD',
+            darkgray: '#8F8F8F',
         },
         spacing: {
             px: '1px',
