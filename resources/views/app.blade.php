@@ -13,11 +13,7 @@
 <body>
 <div id="app">
     <div class="container mx-auto">
-        <header class="flex pt-6 mb-8 bg-green-900 rounded-b-lg">
-            <h1 class="w-1/2 pl-8 text-4xl text-white font-bold">GIIB</h1>
-            <nav-bar></nav-bar>
-        </header>
-
+        <nav-bar></nav-bar>
         <main class="primary">
             <div class="primary flex-1">
                 <router-view></router-view>
