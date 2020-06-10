@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h1 class="page-title">Explore Cases</h1>
         <div class="bg-local bg-cover bg-center pt-4 pb-24"
              :style="{ backgroundImage: 'url(' + require('../../images/House_Detailed_Day'+'.png') + ')' }">
             <div class="primary flex flex-wrap justify-center pb-64 pt-48 px-10 mb-32 mx-64 mt-16 bg-no-repeat bg-center bg-contain"
