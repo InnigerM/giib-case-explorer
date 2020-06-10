@@ -13,39 +13,12 @@
 <body>
 <div id="app">
     <div class="container mx-auto">
-        <header class="py-6 mb-8">
-            <h1 class="text-4xl text-black font-bold">Geschäftsinnovation im Bauwesen</h1>
+        <header class="flex pt-6 mb-8 bg-green-900 rounded-b-lg">
+            <h1 class="w-1/2 pl-8 text-4xl text-white font-bold">GIIB</h1>
+            <nav-bar></nav-bar>
         </header>
 
-        <main class="primary flex">
-            <aside class="w-1/5 pt-8">
-                <section class="mb-10">
-                    <h5 class="uppercase font-bold mb-5 text-base">
-                        Explore
-                    </h5>
-                    <ul>
-                        <li class="text-sm pb-4">
-                            <router-link class="text-black" to="/" exact>Explore Cases</router-link>
-                        </li>
-                    </ul>
-                </section>
-
-                <section class="mb-10">
-                    <h5 class="uppercase font-bold mb-5 text-base">
-                        View
-                    </h5>
-                    <ul>
-                        <li class="text-sm pb-4">
-                            <router-link class="text-black" to="/cases" exact>View Cases</router-link>
-                        </li>
-
-                        <li class="text-sm pb-4">
-                            <router-link class="text-black" to="/cases/create" exact>Create new Case</router-link>
-                        </li>
-                    </ul>
-                </section>
-            </aside>
-
+        <main class="primary">
             <div class="primary flex-1">
                 <router-view></router-view>
             </div>
