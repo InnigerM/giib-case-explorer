@@ -1,8 +1,8 @@
 <template>
     <div>
         <div>
-            <div class="mb-8 mt-12">
-                <div class="relative z-minus case-image shadow-2xl mb-8"
+            <div class="pb-8 mt-12">
+                <div class="relative case-image shadow-2xl mb-8"
                      v-bind:style="{ backgroundImage: 'url(' + post.image_link + ')' }">
 
                     <div
@@ -19,9 +19,9 @@
                 <div>
                     <BusinessCanvas :canvas="businessCanvas"></BusinessCanvas>
                 </div>
-                <div v-for="paragraph in paragraphs">
+                <div v-for="paragraph in paragraphs" class="box-gradient">
                     <h3 v-text="paragraph.title" class="text-gray-900 mb-4 text-xl"></h3>
-                    <p v-text="paragraph.content" class="mb-6"></p>
+                    <p v-text="paragraph.content" class="pb-6"></p>
                 </div>
             </div>
         </div>

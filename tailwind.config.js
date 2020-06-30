@@ -116,6 +116,7 @@ module.exports = {
             default: '0.25rem',
             md: '0.375rem',
             lg: '0.5rem',
+            '2xl': '1.25rem',
             full: '9999px',
         },
         borderWidth: {
@@ -133,6 +134,8 @@ module.exports = {
             lg: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
             xl: '0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
             '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+            'box-one': '0px 9px 18px 0px rgba(0, 0, 0, 0.18), 0px 9px 18px 0px rgba(0, 0, 0, 0.18)',
+            'box-two': '0px 5.5px 5px 0px rgba(0, 0, 0, 0.24), 0px 5.5px 5px 0px rgba(0, 0, 0, 0.24)',
             'btn': '5px 5px 6px 0px rgba(225, 225, 225, 1.0), 5px 5px 6px 0px rgba(225, 225, 225, 1.0)',
             'btn-primary': '5px 5px 6px 0px rgba(48, 69, 100, 0.4), 5px 5px 6px 0px rgba(48, 69, 100, 0.4)',
             'btn-tertiary': '5px 5px 6px 0px rgba(12, 37, 73, 0.4), 5px 5px 6px 0px rgba(12, 37, 73, 0.4)',

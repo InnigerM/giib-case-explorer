@@ -11,7 +11,10 @@
 
 </head>
 <body>
-<div id="app">
+<div id="app"
+     class="bg-repeat"
+     style="background-image: url({{url("/images/background.png")}});
+         background-repeat: repeat;">
     <div class="container mx-auto">
         <nav-bar></nav-bar>
         <main class="primary">

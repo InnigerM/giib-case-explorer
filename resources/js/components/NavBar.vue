@@ -1,5 +1,5 @@
 <template>
-    <header class="fixed left-0 top-0 right-0 flex bg-primary-900 rounded-b-lg">
+    <header class="fixed left-0 top-0 right-0 flex bg-primary-900 rounded-b-lg z-10">
         <h1 class="w-1/2 pl-32 text-4xl text-white font-bold">GIIB</h1>
         <div class="absolute m-4 mt-3 h-20 w-24 rounded-full bg-orange bg-contain bg-no-repeat bg-center border-white border-4"
              :style="{ backgroundImage: 'url(' + require('../../images/' + `${status}` +'.png') + ')' }">

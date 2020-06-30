@@ -36,6 +36,10 @@
     @apply border-gray-900 border-2 p-4;
 }
 
+.box-gradient {
+    background: linear-gradient(#F6F6F6, #E5E5E5);
+    @apply mb-12 p-8 rounded-2xl shadow-box-one shadow-box-two;
+}
 
 .btn {
     @apply text-white rounded-full font-medium text-sm p-2 px-12;

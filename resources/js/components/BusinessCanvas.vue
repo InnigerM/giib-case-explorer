@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="box-gradient">
         <h2 class="text-xl text-gray-900">Business Model Canvas</h2>
         <div class="grid grid-cols-5 grid-rows-3 border-gray-900 border-2 mb-8">
 
