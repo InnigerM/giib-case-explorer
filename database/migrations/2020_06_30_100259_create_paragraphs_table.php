@@ -17,7 +17,7 @@ class CreateParagraphsTable extends Migration
             $table->id();
             $table->unsignedBigInteger('post_id');
             $table->string('title')->nullable();
-            $table->multiLineString('content');
+            $table->longText('content');
             $table->timestamps();
 
             $table->foreign('post_id')->references('id')->on('posts')->onDelete('cascade');
