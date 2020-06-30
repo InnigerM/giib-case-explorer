@@ -21,5 +21,6 @@ Route::get('posts/favorite', 'PostController@favorite');
 Route::get('posts/byTag/{tag}', 'PostController@filter');
 Route::get('posts/{id}', 'PostController@show');
 Route::get('posts/{id}/tags', 'PostController@tags');
+Route::get('posts/{id}/paragraphs', 'PostController@paragraphs');
 Route::get('tags', 'TagContoller@index');
 Route::get('tags/{id}', 'TagsController@show');

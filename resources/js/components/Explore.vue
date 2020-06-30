@@ -8,7 +8,7 @@
                      v-for="post in posts"
                      :style="{ backgroundImage: 'url(' + require('../../images/Window'+'.png') + ')' }"
                      @click="showPost(post.id)">
-                    <span v-text="post.title" class="text-2xl ml-auto mr-auto mb-auto mt-auto"></span>
+                    <span v-text="post.title" class="text-2xl text-white ml-auto mr-auto mb-auto mt-auto"></span>
                 </div>
             </div>
         </div>
