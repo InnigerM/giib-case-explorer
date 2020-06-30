@@ -28,6 +28,14 @@
     @apply w-auto rounded-full bg-primary-700 text-white text-left text-white p-2 pl-12 my-2 mx-4 bg-left-aligned bg-25 bg-no-repeat;
 }
 
+.business-canvas-list {
+    @apply list-disc pl-8 border-gray-900 text-gray-900;
+}
+
+.business-canvas-item {
+    @apply border-gray-900 border-2 p-4;
+}
+
 
 .btn {
     @apply text-white rounded-full font-medium text-sm p-2 px-12;

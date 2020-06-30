@@ -16,6 +16,9 @@
                         </div>
                     </div>
                 </div>
+                <div>
+                    <BusinessCanvas :canvas="businessCanvas"></BusinessCanvas>
+                </div>
                 <div v-for="paragraph in paragraphs">
                     <h3 v-text="paragraph.title" class="text-gray-900 mb-4 text-xl"></h3>
                     <p v-text="paragraph.content" class="mb-6"></p>
@@ -27,16 +30,28 @@
 
 <script>
     import Tag from "./Tag";
+    import BusinessCanvas from "./BusinessCanvas"
 
     export default {
         name: "CaseDetail",
-        components: {Tag},
+        components: {BusinessCanvas, Tag},
         data() {
             return {
                 post: {
                     title: '',
                     content: '',
                     image_link: ''
+                },
+                businessCanvas: {
+                    key_partners: '',
+                    key_activities: '',
+                    key_resources: '',
+                    value_proposition: '',
+                    customer_relationship: '',
+                    channels: '',
+                    customer_segments: '',
+                    cost_structure: '',
+                    revenue_stream: ''
                 },
                 paragraphs: {
                     id: '',
@@ -64,6 +79,18 @@
             axios.get(`http://giibTest.test/api/posts/${this.$route.params.id}/paragraphs`)
                 .then(response => {
                     this.paragraphs = response.data
+                })
+            axios.get(`http://giibTest.test/api/posts/${this.$route.params.id}/bmc`)
+                .then(response => {
+                    this.businessCanvas.key_partners = response.data.key_partners;
+                    this.businessCanvas.key_activities = response.data.key_activities;
+                    this.businessCanvas.key_resources = response.data.key_resources;
+                    this.businessCanvas.value_proposition = response.data.value_proposition;
+                    this.businessCanvas.customer_relationship = response.data.customer_relationship;
+                    this.businessCanvas.channels = response.data.channels;
+                    this.businessCanvas.customer_segments = response.data.customer_segments;
+                    this.businessCanvas.cost_structure = response.data.cost_structure;
+                    this.businessCanvas.revenue_stream = response.data.revenue_stream;
                 })
         }
     }

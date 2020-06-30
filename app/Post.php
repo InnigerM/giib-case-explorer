@@ -15,4 +15,9 @@ class Post extends Model
     {
         return $this->hasMany(Paragraphs::class);
     }
+
+    public function businessCanvas()
+    {
+        return $this->hasOne(BusinessModelCanvas::class);
+    }
 }

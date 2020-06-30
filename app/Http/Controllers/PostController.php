@@ -56,11 +56,20 @@ class PostController extends Controller
         return Response::json($tags);
     }
 
-    public function paragraphs($id){
+    public function paragraphs($id)
+    {
         $post = Post::where('id', $id)->first();
         $paragraphs = $post->paragraphs;
 
         return Response::json($paragraphs);
+    }
+
+    public function businessCanvas($id)
+    {
+        $post = Post::where('id', $id)->first();
+        $businessCanvas = $post->businessCanvas;
+
+        return Response::json($businessCanvas);
     }
 
     public function update()

@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1 class="page-title">View all Cases here</h1>
-        <div class="primary flex flex-wrap">
+        <div class="primary flex flex-wrap justify-center">
             <div class="case-item flex-none" v-for="post in posts">
                 <div class="card-image" v-bind:style="{ backgroundImage: 'url(' + post.image_link + ')' }"></div>
                 <h5 v-text="post.title" class="mb-4 text-2xl"></h5>
