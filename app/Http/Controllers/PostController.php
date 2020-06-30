@@ -14,7 +14,8 @@ class PostController extends Controller
         return Response::json($posts);
     }
 
-    public function favorite(){
+    public function favorite()
+    {
         $posts = Post::all()->skip(0)->take(6);
         return Response::json($posts);
     }
@@ -42,10 +43,17 @@ class PostController extends Controller
         $post->title = request('title');
         $post->content = request('content');
         $post->image_link = request('image_link');
-        $post->tag = request('tag');
         $post->save();
 
         return redirect('/cases');
+    }
+
+    public function tags($id)
+    {
+        $post = Post::where('id', $id)->first();
+        $tags = $post->tags;
+
+        return Response::json($tags);
     }
 
     public function update()
