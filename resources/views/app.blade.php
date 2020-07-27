@@ -15,7 +15,7 @@
      class="bg-repeat"
      style="background-image: url({{url("/images/background.png")}});
          background-repeat: repeat;">
-    <div class="container mx-auto">
+    <div class="container mx-auto pb-8">
         <nav-bar></nav-bar>
         <main class="primary">
             <div class="primary flex-1">

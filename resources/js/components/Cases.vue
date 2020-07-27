@@ -1,12 +1,10 @@
 <template>
-    <div>
+    <div class="bg-gray-100 rounded-2xl pb-8 shadow-box-one shadow-box-two">
         <h1 class="page-title">View all Cases here</h1>
         <div class="primary flex flex-wrap justify-center">
-            <div class="case-item flex-none" v-for="post in posts">
-                <div class="card-image" v-bind:style="{ backgroundImage: 'url(' + post.image_link + ')' }"></div>
-                <h5 v-text="post.title" class="mb-4 text-2xl"></h5>
-                <span class="btn btn-tertiary-blue m-12" v-text="post.tag"></span>
-                <button class="btn btn-primary mt-8" @click="showPost(post.id)">See more</button>
+            <div class="case-item shadow-inner-one shadow-inner-two bg-gray-100 flex-none" v-for="post in posts">
+                <div class="card-image" @click="showPost(post.id)" v-bind:style="{ backgroundImage: 'url(' + post.image_link + ')' }"></div>
+                <h5 v-text="post.title" class="mt-2 mb-4 text-2xl"></h5>
             </div>
         </div>
     </div>

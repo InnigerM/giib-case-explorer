@@ -1,7 +1,7 @@
 <template>
     <div>
         <div>
-            <div class="pb-8 mt-12">
+            <div class="py-12 px-4 rounded-2xl bg-gray-100 shadow-box-one shadow-box-two">
                 <div class="relative case-image shadow-2xl mb-8"
                      v-bind:style="{ backgroundImage: 'url(' + post.image_link + ')' }">
 

@@ -136,6 +136,8 @@ module.exports = {
             '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
             'box-one': '0px 9px 18px 0px rgba(0, 0, 0, 0.18), 0px 9px 18px 0px rgba(0, 0, 0, 0.18)',
             'box-two': '0px 5.5px 5px 0px rgba(0, 0, 0, 0.24), 0px 5.5px 5px 0px rgba(0, 0, 0, 0.24)',
+            'inner-one': '-12px -12px 20px 0px rgba(0, 0, 0, 0.8), -12px -12px 20px 0px rgba(0, 0, 0, 0.8)',
+            'inner-two': '10px 10px 24px 0px rgba(166, 180, 200, 0.7), 10px 10px 24px 0px rgba(166, 180, 200, 0.7)',
             'btn': '5px 5px 6px 0px rgba(225, 225, 225, 1.0), 5px 5px 6px 0px rgba(225, 225, 225, 1.0)',
             'btn-primary': '5px 5px 6px 0px rgba(48, 69, 100, 0.4), 5px 5px 6px 0px rgba(48, 69, 100, 0.4)',
             'btn-tertiary': '5px 5px 6px 0px rgba(12, 37, 73, 0.4), 5px 5px 6px 0px rgba(12, 37, 73, 0.4)',

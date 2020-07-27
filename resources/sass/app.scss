@@ -3,7 +3,7 @@
 @tailwind components;
 
 .page-title {
-    @apply font-normal text-3xl text-gray-800 leading-none mb-12;
+    @apply font-normal text-3xl text-gray-800 leading-none ml-16 pt-12 mb-12;
 }
 
 .case-item {
