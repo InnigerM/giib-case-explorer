@@ -9,10 +9,13 @@
                         class="absolute bottom-0 left-0 right-0 flex flex-wrap bg-secondary-900 bg-opacity-75 rounded-b-lg">
                         <div v-text="post.title" class="w-1/3 p-4 mt-auto mb-auto text-left text-white text-2xl">
                         </div>
-                        <div class="w-2/3 justify-end flex flex-wrap">
-                            <div v-for="tag in tags" class="w-1/4 mt-auto mb-auto">
-                                <Tag :tag="tag.name"></Tag>
-                            </div>
+                    </div>
+                </div>
+                <div class="box-gradient flex flex-wrap">
+                    <p v-text="post.content" class="w-3/4 text-gray-900"></p>
+                    <div class="w-1/4 justify-end flex flex-wrap">
+                        <div v-for="tag in tags" class="w-full mt-auto mb-auto">
+                            <Tag :tag="tag.name"></Tag>
                         </div>
                     </div>
                 </div>

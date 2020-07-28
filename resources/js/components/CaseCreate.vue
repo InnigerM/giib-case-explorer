@@ -10,12 +10,14 @@
                                v-model="post.title">
                     </label>
 
-                    <label class="w-full">
-                        Content:
-                        <textarea class="w-full border-gray-500 border-2  p-1 mb-5"
-                                  placeholder="Case content goes here..."
-                                  v-model="post.content"></textarea>
-                    </label>
+                    <div v-for="paragraph in paragraphs">
+                        <label class="w-full">
+                            Paragraphen:
+                            <textarea class="w-full border-gray-500 border-2  p-1 mb-5"
+                                      placeholder="Paragraph hier hinzufügen..."
+                                      v-model="post.content"></textarea>
+                        </label>
+                    </div>
 
                     <label class="w-full">
                         Image Link:
@@ -48,6 +50,18 @@
                     content: '',
                     image_link: '',
                     tag: ''
+                },
+                paragraphs: {
+                    paragraph_one: '1',
+                    paragraph_two: '2',
+                    paragraph_three: '3',
+                    paragraph_four: '4',
+                    paragraph_five: '5',
+                    paragraph_six: '6',
+                    paragraph_seven: '7',
+                    paragraph_eight: '8',
+                    paragraph_nine: '9',
+                    paragraph_ten: '10'
                 }
             }
         },

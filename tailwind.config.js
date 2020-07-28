@@ -16,7 +16,7 @@ module.exports = {
             current: 'currentColor',
 
             black: '#000',
-            white: '#fff',
+            white: '#efefef',
 
             gray: {
                 100: '#fafafa',
@@ -91,7 +91,7 @@ module.exports = {
             bottom: 'bottom',
             center: 'center',
             left: 'left',
-            'left-aligned': '10% 50%',
+            'left-aligned': '3% 50%',
             'left-bottom': 'left bottom',
             'left-top': 'left top',
             right: 'right',
