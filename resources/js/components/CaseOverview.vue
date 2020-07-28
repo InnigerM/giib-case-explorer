@@ -1,12 +1,20 @@
 <template>
-    <div class="bg-gray-100 rounded-2xl pb-8 shadow-box-one shadow-box-two">
-        <h1 class="page-title">View all Cases here</h1>
-        <Cases :articles="posts"></Cases>
+    <div class="relative">
+        <div
+            class="nav-aligned"
+            @click="goToPage('')"
+            :style="{ backgroundImage: 'url(' + ('../../images/view.png') + ')' }">
+        </div>
+        <div class="bg-gray-100 rounded-2xl pb-8 shadow-box-one shadow-box-two">
+            <h1 class="page-title">View all Cases here</h1>
+            <Cases :articles="posts"></Cases>
+        </div>
     </div>
 </template>
 
 <script>
     import Cases from "./Cases";
+
     export default {
         name: "CaseOverview",
         components: {Cases},

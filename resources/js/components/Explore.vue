@@ -1,9 +1,15 @@
 <template>
-    <div>
+    <div class="relative">
+        <div
+            class="nav-aligned"
+            @click="goToPage('')"
+            :style="{ backgroundImage: 'url(' + ('../../images/explore.png') + ')' }">
+        </div>
         <div class="bg-local bg-cover bg-center rounded-2xl pt-4 pb-24"
              :style="{ backgroundImage: 'url(' + require('../../images/House_Detailed_Day'+'.png') + ')' }">
-            <div class="primary flex flex-wrap justify-center pb-64 pt-48 px-10 mb-32 mx-64 mt-16 bg-no-repeat bg-center bg-contain"
-                 :style="{ backgroundImage: 'url(' + require('../../images/House'+'.png') + ')' }">
+            <div
+                class="primary flex flex-wrap justify-center pb-64 pt-48 px-10 mb-32 mx-64 mt-16 bg-no-repeat bg-center bg-contain"
+                :style="{ backgroundImage: 'url(' + require('../../images/House'+'.png') + ')' }">
                 <div class="case-window"
                      v-for="post in posts"
                      :style="{ backgroundImage: 'url(' + require('../../images/Window'+'.png') + ')' }"

@@ -2,6 +2,12 @@
 
 @tailwind components;
 
+.nav-aligned{
+    @apply absolute h-20 w-24 rounded-full bg-darkblue bg-contain bg-no-repeat bg-center border-white border-4;
+    top: -2.5rem;
+    left: 1.5rem;
+}
+
 .page-title {
     @apply font-normal text-3xl text-gray-800 leading-none ml-16 pt-12 mb-12;
 }
