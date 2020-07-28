@@ -15,7 +15,7 @@
                     <p v-text="post.content" class="w-3/4 text-gray-900"></p>
                     <div class="w-1/4 justify-end flex flex-wrap">
                         <div v-for="tag in tags" class="w-full mt-auto mb-auto">
-                            <Tag :tag="tag.name"></Tag>
+                            <Tag :tag="tag"></Tag>
                         </div>
                     </div>
                 </div>

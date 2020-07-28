@@ -1,8 +1,9 @@
 import NotFound from "./components/NotFound";
 import Explore from "./components/Explore";
-import Cases from "./components/Cases";
 import CaseDetail from "./components/CaseDetail";
 import CaseCreate from "./components/CaseCreate";
+import TagOverview from "./components/TagOverview";
+import CaseOverview from "./components/CaseOverview";
 
 
 export default {
@@ -20,7 +21,7 @@ export default {
 
         {
             path: '/cases',
-            component: Cases
+            component: CaseOverview
         },
 
         {
@@ -31,6 +32,12 @@ export default {
         {
             path: '/cases/:id',
             component: CaseDetail,
+            props: true
+        },
+
+        {
+            path: '/cases/tags/:id',
+            component: TagOverview,
             props: true
         }
     ]

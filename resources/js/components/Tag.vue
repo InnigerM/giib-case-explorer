@@ -1,6 +1,7 @@
 <template>
     <div class="tag"
-         v-text="tag"
+         v-text="tag.name"
+        @click="showTagOverview(tag.id)"
          :style="{ backgroundImage: 'url(' + require('../../images/tag'+'.png') + ')' }">
     </div>
 </template>
@@ -10,7 +11,7 @@
         name: "Tag",
 
         props: {
-            tag: String,
+            tag: Object,
         },
 
         data() {
@@ -18,6 +19,12 @@
                 posts: []
             }
         },
+
+        methods: {
+            showTagOverview(id){
+                this.$router.push({path: `/cases/tags/${id}`});
+            }
+        }
     }
 </script>
 
