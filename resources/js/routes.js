@@ -6,7 +6,6 @@ import CaseCreate from "./components/CaseCreate";
 
 
 export default {
-    mode: 'history',
     linkActiveClass: 'font-bold',
     routes: [
         {
@@ -31,7 +30,8 @@ export default {
 
         {
             path: '/cases/:id',
-            component: CaseDetail
+            component: CaseDetail,
+            props: true
         }
     ]
 }
