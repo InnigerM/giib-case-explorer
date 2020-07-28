@@ -24,4 +24,5 @@ Route::get('posts/{id}/tags', 'PostController@tags');
 Route::get('posts/{id}/paragraphs', 'PostController@paragraphs');
 Route::get('posts/{id}/bmc', 'PostController@businessCanvas');
 Route::get('tags', 'TagContoller@index');
-Route::get('tags/{id}', 'TagsController@show');
+Route::get('tags/{id}', 'TagController@show');
+Route::get('tags/{id}/articles', 'TagController@getArticles');
