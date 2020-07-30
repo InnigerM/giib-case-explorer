@@ -17,7 +17,7 @@
 }
 
 .case-window {
-    @apply w-5/12 m-2 mb-4 p-1 pb-5 h-48 text-center inline-block shadow border-2 rounded-lg flex flex-no-wrap bg-contain bg-no-repeat bg-bottom bg-secondary-900;
+    @apply col-span-1 m-2 mb-4 p-1 pb-5 h-48 text-center inline-block shadow border-2 rounded-lg flex flex-no-wrap bg-contain bg-no-repeat bg-bottom bg-secondary-900;
 }
 
 .card-image {
