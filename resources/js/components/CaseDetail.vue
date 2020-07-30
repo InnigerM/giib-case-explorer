@@ -1,30 +1,34 @@
 <template>
-    <div>
-        <div>
-            <div class="py-12 px-4 rounded-2xl bg-gray-100 shadow-box-one shadow-box-two">
-                <div class="relative case-image shadow-2xl mb-8"
-                     v-bind:style="{ backgroundImage: 'url(' + post.image_link + ')' }">
+    <div class="relative">
+        <button
+            class="nav-aligned"
+            @click="goToPage"
+            :style="{ backgroundImage: 'url(' + ('../../images/back.png') + ')' }">
+        </button>
+        <div class="py-12 px-4 rounded-2xl bg-gray-100 shadow-box-one shadow-box-two">
+            <div class="relative case-image shadow-2xl mb-8"
+                 v-bind:style="{ backgroundImage: 'url(' + post.image_link + ')' }">
 
-                    <div
-                        class="absolute bottom-0 left-0 right-0 flex flex-wrap bg-secondary-900 bg-opacity-75 rounded-b-lg">
-                        <div v-text="post.title" class="w-1/3 p-4 mt-auto mb-auto text-left text-white text-2xl">
-                        </div>
+                <div
+                    class="absolute bottom-0 left-0 right-0 flex flex-wrap bg-secondary-900 bg-opacity-75 rounded-b-lg">
+                    <div v-text="post.title" class="w-1/3 p-4 mt-auto mb-auto text-left text-white text-2xl">
                     </div>
                 </div>
-                <div class="box-gradient flex flex-wrap">
-                    <p v-text="post.content" class="w-3/4 text-gray-900"></p>
-                    <div class="w-1/4 justify-end flex flex-wrap">
-                        <div v-for="tag in tags" class="w-full mt-auto mb-auto">
-                            <Tag :tag="tag"></Tag>
-                        </div>
+            </div>
+            <div class="box-gradient flex flex-wrap">
+                <p v-text="post.content" class="w-3/4 text-gray-900"></p>
+                <div class="w-1/4 justify-end flex flex-wrap">
+                    <div v-for="tag in tags" class="w-full mt-auto mb-auto">
+                        <Tag :tag="tag"></Tag>
                     </div>
                 </div>
-                <div>
-                    <BusinessCanvas :canvas="businessCanvas"></BusinessCanvas>
-                </div>
-                <div v-for="paragraph in paragraphs" class="box-gradient">
-                    <h3 v-text="paragraph.title" class="text-gray-900 mb-4 text-xl"></h3>
-                    <p v-text="paragraph.content" class="pb-6"></p>
+            </div>
+            <div>
+                <BusinessCanvas :canvas="businessCanvas"></BusinessCanvas>
+            </div>
+            <div class="box-gradient">
+                <div v-for="paragraph in paragraphs">
+                    <Paragraph :paragraph="paragraph" :visible="false"></Paragraph>
                 </div>
             </div>
         </div>
@@ -34,10 +38,11 @@
 <script>
     import Tag from "./Tag";
     import BusinessCanvas from "./BusinessCanvas"
+    import Paragraph from "./Paragraph";
 
     export default {
         name: "CaseDetail",
-        components: {BusinessCanvas, Tag},
+        components: {Paragraph, BusinessCanvas, Tag},
         data() {
             return {
                 post: {
@@ -65,6 +70,12 @@
                     id: '',
                     name: ''
                 }]
+            }
+        },
+
+        methods: {
+            goToPage() {
+                this.$router.go(-1);
             }
         },
 
