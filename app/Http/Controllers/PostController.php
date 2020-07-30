@@ -31,7 +31,18 @@ class PostController extends Controller
         return Response::json($post);
     }
 
-    public function filter($tag)
+    public function search($query)
+    {
+        $posts = Post::where('title', 'LIKE', "%$query%")->get();
+
+        if(!$posts) {
+            abort(404);
+        }
+
+        return Response::json($posts);
+    }
+
+    public function filterByTags($tag)
     {
         $posts = Post::where('tag', $tag)->get();
         return Response::json($posts);
