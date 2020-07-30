@@ -1,10 +1,10 @@
 <template>
     <div class="relative">
-        <div
+        <button
             class="nav-aligned"
             @click="goToPage('')"
             :style="{ backgroundImage: 'url(' + ('../../images/explore.png') + ')' }">
-        </div>
+        </button>
         <div class="bg-local bg-cover bg-center rounded-2xl pt-4 pb-24"
              :style="{ backgroundImage: 'url(' + require('../../images/House_Detailed_Day'+'.png') + ')' }">
             <div
@@ -47,6 +47,9 @@
         methods: {
             showPost(id) {
                 this.$router.push({path: `/cases/${id}`});
+            },
+            goToPage(link) {
+                this.$router.push({path: `/${link}`});
             },
             filter(tag) {
                 axios.get(`http://giibTest.test/api/posts/byTag/${tag}`)
