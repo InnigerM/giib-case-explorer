@@ -4,6 +4,7 @@ import CaseDetail from "./components/CaseDetail";
 import CaseCreate from "./components/CaseCreate";
 import TagOverview from "./components/TagOverview";
 import CaseOverview from "./components/CaseOverview";
+import Home from "./Home";
 
 
 export default {
@@ -16,6 +17,11 @@ export default {
 
         {
             path: '/',
+            component: Home
+        },
+
+        {
+            path: '/explore',
             component: Explore
         },
 

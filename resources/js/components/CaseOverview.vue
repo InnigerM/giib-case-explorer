@@ -7,7 +7,7 @@
         </button>
         <div class="py-12 px-4 bg-gray-100 rounded-2xl pb-8 shadow-box-one shadow-box-two">
             <div class="box-gradient">
-                <h1 class="ml-0 pt-0 page-title">View all Cases here</h1>
+                <h1 class="page-title">View all Cases here</h1>
                 <Tag v-for="tag in tags" :key="tag.name" class="ml-0 mb-6 w-auto" :tag="tag"></Tag>
                 <form>
                     <label>
