@@ -1,9 +1,9 @@
 <template>
     <div>
-        <h3 v-text="paragraph.title"
+        <button v-text="paragraph.title"
             @click="toggleCollapse"
             class="text-gray-900 pl-8 mb-4 text-xl bg-no-repeat bg-contain"
-            :style="{ backgroundImage: 'url(' + ('../../images/arrow_right.png') + ')' }"></h3>
+            :style="{ backgroundImage: 'url(' + ('../../images/arrow_right.png') + ')' }"></button>
         <p v-show="visible" v-text="paragraph.content" class="pb-8"></p>
     </div>
 </template>

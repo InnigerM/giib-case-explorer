@@ -1,9 +1,9 @@
 <template>
-    <div class="tag"
+    <button class="tag"
          v-text="tag.name"
         @click="showTagOverview(tag.id)"
          :style="{ backgroundImage: 'url(' + require('../../images/tag'+'.png') + ')' }">
-    </div>
+    </button>
 </template>
 
 <script>
