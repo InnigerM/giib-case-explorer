@@ -22,23 +22,8 @@
     export default {
         name: "nav-bar",
 
-        data() {
-            return {
-                viewIsOpen: false,
-                exploreIsOpen: false,
-                status: "explore"
-            }
-        },
-
         methods: {
             goToPage(link) {
-                this.exploreIsOpen = false;
-                this.viewIsOpen = false;
-                if(link === ''){
-                    status = "explore";
-                } else {
-                    status = "view"
-                }
                 this.$router.push({path: `/${link}`});
             }
         }
