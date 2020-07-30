@@ -5,13 +5,13 @@
             <section class="relative w-1/6">
                 <button @click="goToPage('')"
                         class="uppercase font-bold text-white mb-5 text-base">
-                    Explore
+                    Entdecken
                 </button>
             </section>
 
             <section class="relative w-1/6">
                 <button @click="goToPage('cases')" class="uppercase font-bold text-white mb-5 text-base">
-                    View
+                    Alles ansehen
                 </button>
             </section>
         </div>
