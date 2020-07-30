@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import GoHome from "./GoHome";
+import GoHome from "./components/GoHome";
 
 export default {
     name: "Home.vue",

@@ -1,5 +1,6 @@
 <template>
-    <div>
+    <div class="relative">
+        <go-home></go-home>
         <h1 class="page-title">Create a new Business Case</h1>
         <div>
             <div class="mb-8">
@@ -40,9 +41,10 @@
 </template>
 
 <script>
+    import GoHome from "./GoHome";
     export default {
         name: "CaseCreate",
-
+        components: {GoHome},
         data() {
             return {
                 post: {

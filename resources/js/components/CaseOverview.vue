@@ -1,10 +1,6 @@
 <template>
     <div class="relative">
-        <button
-            class="nav-aligned"
-            @click="goToPage('')"
-            :style="{ backgroundImage: 'url(' + ('../../images/view.png') + ')' }">
-        </button>
+        <go-home></go-home>
         <div class="py-12 px-4 bg-gray-100 rounded-2xl pb-8 shadow-box-one shadow-box-two">
             <div class="box-gradient">
                 <h1 class="page-title">View all Cases here</h1>
@@ -26,10 +22,11 @@
 <script>
     import Cases from "./Cases";
     import Tag from "./Tag";
+    import GoHome from "./GoHome";
 
     export default {
         name: "CaseOverview",
-        components: {Tag, Cases},
+        components: {GoHome, Tag, Cases},
 
         data() {
             return {

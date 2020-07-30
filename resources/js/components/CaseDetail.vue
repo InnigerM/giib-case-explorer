@@ -1,10 +1,6 @@
 <template>
     <div class="relative">
-        <button
-            class="nav-aligned"
-            @click="goToPage"
-            :style="{ backgroundImage: 'url(' + ('../../images/back.png') + ')' }">
-        </button>
+        <go-home></go-home>
         <div class="py-12 px-4 rounded-2xl bg-gray-100 shadow-box-one shadow-box-two">
             <div class="relative case-image shadow-2xl mb-8"
                  v-bind:style="{ backgroundImage: 'url(' + post.image_link + ')' }">
@@ -39,10 +35,11 @@
     import Tag from "./Tag";
     import BusinessCanvas from "./BusinessCanvas"
     import Paragraph from "./Paragraph";
+    import GoHome from "./GoHome";
 
     export default {
         name: "CaseDetail",
-        components: {Paragraph, BusinessCanvas, Tag},
+        components: {GoHome, Paragraph, BusinessCanvas, Tag},
         data() {
             return {
                 post: {
