@@ -12,8 +12,8 @@
 </template>
 
 <script>
-    import Cases from "./Cases";
-    import GoHome from "./GoHome";
+    import Cases from "../displayComponents/Cases";
+    import GoHome from "../navigation/GoHome";
 
     export default {
         name: "TagOverview",

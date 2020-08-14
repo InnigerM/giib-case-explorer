@@ -20,9 +20,9 @@
 </template>
 
 <script>
-    import Cases from "./Cases";
-    import Tag from "./Tag";
-    import GoHome from "./GoHome";
+    import Cases from "../displayComponents/Cases";
+    import Tag from "../displayComponents/Tag";
+    import GoHome from "../navigation/GoHome";
 
     export default {
         name: "CaseOverview",

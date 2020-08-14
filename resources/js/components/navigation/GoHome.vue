@@ -2,7 +2,7 @@
   <button
       class="nav-aligned"
       @click="goHome"
-      :style="{ backgroundImage: 'url(' + require('../../images/home.png') + ')' }">
+      :style="{ backgroundImage: 'url(' + require('../../../images/home.png') + ')' }">
   </button>
 </template>
 <script>

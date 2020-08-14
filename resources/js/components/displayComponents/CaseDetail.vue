@@ -35,7 +35,7 @@
     import Tag from "./Tag";
     import BusinessCanvas from "./BusinessCanvas"
     import Paragraph from "./Paragraph";
-    import GoHome from "./GoHome";
+    import GoHome from "../navigation/GoHome";
 
     export default {
         name: "CaseDetail",

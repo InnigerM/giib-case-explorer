@@ -2,7 +2,7 @@
     <button class="tag"
          v-text="tag.name"
         @click="showTagOverview(tag.id)"
-         :style="{ backgroundImage: 'url(' + require('../../images/tag'+'.png') + ')' }">
+         :style="{ backgroundImage: 'url(' + require('../../../images/tag'+'.png') + ')' }">
     </button>
 </template>
 

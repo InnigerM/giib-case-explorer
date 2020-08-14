@@ -41,7 +41,7 @@
 </template>
 
 <script>
-    import GoHome from "./GoHome";
+    import GoHome from "../navigation/GoHome";
     export default {
         name: "CaseCreate",
         components: {GoHome},

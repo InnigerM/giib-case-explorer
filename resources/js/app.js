@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import VueRouter from "vue-router";
 import routes from "./routes";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/navigation/NavBar";
 import axios from 'axios';
 
 window.axios = axios;

@@ -1,9 +1,9 @@
 import NotFound from "./components/NotFound";
-import Explore from "./components/Explore";
-import CaseDetail from "./components/CaseDetail";
-import CaseCreate from "./components/CaseCreate";
-import TagOverview from "./components/TagOverview";
-import CaseOverview from "./components/CaseOverview";
+import Explore from "./components/pages/Explore";
+import CaseDetail from "./components/displayComponents/CaseDetail";
+import CaseCreate from "./components/pages/CaseCreate";
+import TagOverview from "./components/pages/TagOverview";
+import CaseOverview from "./components/pages/CaseOverview";
 import Home from "./Home";
 
 
