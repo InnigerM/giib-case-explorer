@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div class="box-gradient flex flex-wrap">
-                <p v-text="post.content" class="w-3/4 text-gray-900"></p>
+                <p v-text="post.description" class="w-3/4 text-gray-900"></p>
                 <div class="w-1/4 justify-end flex flex-wrap">
                     <div v-for="tag in tags" class="w-full mt-auto mb-auto">
                         <Tag :tag="tag"></Tag>
@@ -44,7 +44,7 @@
             return {
                 post: {
                     title: '',
-                    content: '',
+                    description: '',
                     image_link: ''
                 },
                 businessCanvas: {
@@ -80,7 +80,7 @@
             axios.get(`http://giibTest.test/api/posts/${this.$route.params.id}`)
                 .then(response => {
                     this.post.title = response.data.title;
-                    this.post.content = response.data.content;
+                    this.post.description = response.data.description;
                     this.post.image_link = response.data.image_link;
                 })
             axios.get(`http://giibTest.test/api/posts/${this.$route.params.id}/tags`)
